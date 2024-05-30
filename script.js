@@ -29,7 +29,12 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age) {
-    return age >= 18;
+    if (age >= 18) {
+        return "Adult";
+    } else {
+        return "Minor";
+    }
+    // return age >= 18 ? "Adult" : "Minor";
 }
 
 console.log('Exercise 2 Result:', isAdult(21));
@@ -46,7 +51,20 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
-    return char === (/[aeiouAEIOU]/g);
+    if (char === "a" || char === "A") {
+        return true;
+    } else if (char === "e" || char === "E") {
+        return true;
+    } else if (char === "i" || char === "I") {
+        return true;
+    } else if (char === "o" || char === "U") {
+        return true;
+    } else if (char === "u" || char === "U") {
+        return true;
+    } else {
+        return false;
+    }
+    // return char === (/[aeiouAEIOU]/g);
 }
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
@@ -199,7 +217,6 @@ function basicCalculator(num1, num2, operator) {
     } else {
         return "Unspported operation"
     }
-    return 
 }
 
 console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
